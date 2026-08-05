@@ -5,7 +5,7 @@ import { CloudinaryStorage } from "multer-storage-cloudinary";
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary, // ✅ FIXED (remove .v2)
     params: {
-        folder: "gbcadmech/projects",
+        folder: "mechrobot/projects",
         resource_type: "image",
         allowed_formats: ["jpg", "jpeg", "png", "webp"]
     }

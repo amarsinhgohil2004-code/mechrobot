@@ -49,7 +49,7 @@ export const createProject = async (req, res) => {
         if (coverFile) {
             const result = await cloudinary.v2.uploader.upload(
                 `data:${coverFile.mimetype};base64,${coverFile.buffer.toString("base64")}`,
-                { folder: "gbcadmech/projects" }
+                { folder: "mechrobot/projects" }
             );
 
             coverImage = result.secure_url;
@@ -63,7 +63,7 @@ export const createProject = async (req, res) => {
                 `data:${videoFile.mimetype};base64,${videoFile.buffer.toString("base64")}`,
                 {
                     resource_type: "video",
-                    folder: "gbcadmech/projects/videos"
+                    folder: "mechrobot/projects/videos"
                 }
             );
 
@@ -76,7 +76,7 @@ export const createProject = async (req, res) => {
         for (const file of galleryFiles) {
             const result = await cloudinary.v2.uploader.upload(
                 `data:${file.mimetype};base64,${file.buffer.toString("base64")}`,
-                { folder: "gbcadmech/projects" }
+                { folder: "mechrobot/projects" }
             );
 
             images.push(result.secure_url);
@@ -126,7 +126,7 @@ export const updateProject = async (req, res) => {
         if (coverFile) {
             const result = await cloudinary.v2.uploader.upload(
                 `data:${coverFile.mimetype};base64,${coverFile.buffer.toString("base64")}`,
-                { folder: "gbcadmech/projects" }
+                { folder: "mechrobot/projects" }
             );
 
             updateData.coverImage = result.secure_url;
@@ -140,7 +140,7 @@ export const updateProject = async (req, res) => {
                 `data:${videoFile.mimetype};base64,${videoFile.buffer.toString("base64")}`,
                 {
                     resource_type: "video",
-                    folder: "gbcadmech/projects/videos"
+                    folder: "mechrobot/projects/videos"
                 }
             );
 
@@ -156,7 +156,7 @@ export const updateProject = async (req, res) => {
             for (const file of galleryFiles) {
                 const result = await cloudinary.v2.uploader.upload(
                     `data:${file.mimetype};base64,${file.buffer.toString("base64")}`,
-                    { folder: "gbcadmech/projects" }
+                    { folder: "mechrobot/projects" }
                 );
 
                 newImages.push(result.secure_url);
