@@ -44,7 +44,7 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 // ROUTES
 // ===============================
 app.get("/", (req, res) => {
-    res.status(200).send("GB CAD MECH Backend Running 🚀");
+    res.status(200).send("mechrobot Backend Running 🚀");
 });
 
 app.use("/api/auth", authRoutes);
