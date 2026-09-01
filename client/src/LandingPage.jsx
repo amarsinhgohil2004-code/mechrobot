@@ -756,9 +756,9 @@ export default function LandingPage() {
                   <div>
                     <h4 className="font-bold text-navy mb-1">Office</h4>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      23 Saibaba, Saijpur Bogha
+                      82 Rashmi Karnavati Ind, Near Sharnam Estate, Kathwada
                       <br />
-                      Ahmedabad, Gujarat 382345, India
+                      Ahmedabad, Gujarat 382430, India
                     </p>
                   </div>
                 </div>
@@ -789,7 +789,8 @@ export default function LandingPage() {
 
                   <div>
                     <h4 className="font-bold text-navy mb-1">Email Us</h4>
-                    <p className="text-gray-600 text-sm">{settings.email}</p>
+                    <p className="text-gray-600 text-sm">info@mechrobot.in</p>
+                    <p className="text-gray-600 text-sm">sales@mechrobot.in</p>
                   </div>
                 </div>
               </div>
@@ -801,7 +802,7 @@ export default function LandingPage() {
                 <div className="flex gap-3">
                   {/* Instagram */}
                   <a
-                    href="https://www.instagram.com/gb_cad_mech?igsh=MW0wNG11N3JxczM5ZQ%3D%3D&utm_source=qr"
+                    href="https://www.instagram.com/mechrobot_technologies/?hl=en"
                     target="_blank"
                     className="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-pink-400 hover:bg-pink-50 transition group"
                   >
@@ -810,7 +811,7 @@ export default function LandingPage() {
 
                   {/* Facebook */}
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/profile.php?id=61593643400179"
                     target="_blank"
                     className="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-blue-500 hover:bg-blue-50 transition group"
                   >
@@ -819,7 +820,7 @@ export default function LandingPage() {
 
                   {/* YouTube */}
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/channel/UC6pYClJAlmjNVzEiNLeDyRA"
                     target="_blank"
                     className="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-red-500 hover:bg-red-50 transition group"
                   >
@@ -828,7 +829,7 @@ export default function LandingPage() {
 
                   {/* LinkedIn */}
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/gohil-dineshsinh-885397180/"
                     target="_blank"
                     className="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-blue-700 hover:bg-blue-50 transition group"
                   >
