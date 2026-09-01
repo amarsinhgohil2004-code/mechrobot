@@ -9,7 +9,9 @@ export const createInquiry = async (req, res) => {
         const inquiry = await Inquiry.create(req.body);
 
         const transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: "smtp.hostinger.com",
+            port: 465,
+            secure: true,
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS,
@@ -17,9 +19,9 @@ export const createInquiry = async (req, res) => {
         });
 
         await transporter.sendMail({
-            from: process.env.EMAIL_USER,
+            from: process.env.EMAIL_FROM,
             to: process.env.ADMIN_EMAIL,
-            subject: "New Inquiry Received - GB CAD MAC",
+            subject: "New Inquiry Received - MECHROBOT",
             html: `
                 <h2>New Inquiry Submitted</h2>
                 <p><b>Company:</b> ${req.body.companyName}</p>
@@ -33,12 +35,12 @@ export const createInquiry = async (req, res) => {
         await transporter.sendMail({
             from: process.env.EMAIL_USER,
             to: req.body.email,
-            subject: "Thank You for Contacting GB CAD MAC",
+            subject: "Thank You for Contacting MECHROBOT",
             html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto;">
         
         <h2 style="color:#1e3a8a;">
-            Thank You for Contacting GB CAD MAC
+            Thank You for Contacting MECHROBOT
         </h2>
 
         <p>Dear ${req.body.personName || "Customer"},</p>
@@ -71,7 +73,7 @@ export const createInquiry = async (req, res) => {
 
         <p>
             Regards,<br/>
-            <strong>GB CAD MAC</strong><br/>
+            <strong>MECHROBOT</strong><br/>
             Mechanical Design & Industrial Automation Solutions<br/>
             Ahmedabad, Gujarat
         </p>
