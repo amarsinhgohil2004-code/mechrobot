@@ -33,7 +33,7 @@ export const createInquiry = async (req, res) => {
             `,
         });
         await transporter.sendMail({
-            from: process.env.EMAIL_USER,
+            from: process.env.EMAIL_FROM,
             to: req.body.email,
             subject: "Thank You for Contacting MECHROBOT",
             html: `
